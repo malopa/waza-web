@@ -182,7 +182,7 @@
 </head>
 <body class="bg-white">
     <header id="home" class="relative h-[70vh] bg-white">
-        <div class="fixed top-0 left-0 w-full header flex justify-around p-4 bg-white shadow-sm text-center items-center text-black font-bold z-50">
+        <div class="relative top-0 left-0 w-full header flex justify-around p-4 bg-white shadow-sm text-center items-center text-black font-bold z-50">
             <div>
                 <img src="./images/waza.jpeg" class="rounded-md h-[40px]" />
             </div>
@@ -203,28 +203,29 @@
             <div class="md:hidden lg:hidden mobile">
                 <i class="fa fa-bars text-green-400 text-2xl cursor-pointer mr-0" onclick="showMenu(this)" aria-hidden="true"></i>
             </div>
+
+
+            
+
         </div>
         
-        
+        <div class="hide flex-col w-full absolute bg-[#05a2dd] top-99 right-0 left-0 z-99 nav-mobile ">
+            <ul class="w-full md:flex lg:flex items-center list-none py-4">
+    
+                <li class="my-2 w-full text-left">
+                    <a class="block mx-4 w-full cursor-pointer text-white font-bold"><span style='color:#FFF'>wazacom</span><span style="color:#000;">tv</span></a>
+                </li>
+    
+                <li class="my-4 w-full "><a href="#about" class="mx-4 block w-full my-2 cursor-pointer text-white font-bold">Log In</a></li>
+    
+                <li class="my-2"><a class="mx-4 my-2 block cursor-pointer font-bold rounded-md bg-green-500 px-4 py-1 text-center text-white">Sign Up</a></li>
+    
+            </ul>
+        </div>
         
     
 
-    <div class="hide flex-col w-full absolute bg-[#05a2dd] top-99 right-0 z-10 nav-mobile ">
-        <ul class="w-full md:flex lg:flex items-center list-none py-4">
-
-
-            <li class="my-2 w-full ">
-                <a class="block mx-4 w-full cursor-pointer text-white font-bold"><span style='color:#FFF'>wazacom</span><span style="color:#000;">tv</span></a>
-            </li>
-
-
-            <li class="my-4 w-full "><a href="#about" class="mx-4 block w-full my-2 cursor-pointer text-black font-bold">Log In</a></li>
-
-            <li class="my-2"><a class="mx-4 my-2 block cursor-pointer font-bold rounded-md bg-green-500 px-4 py-1 text-center text-white">Sign Up</a></li>
-
-
-        </ul>
-    </div>
+    
 
 
     <div class="px-4 md:px-12 lg:px-12 pt-10 flex justify-around w-full">
