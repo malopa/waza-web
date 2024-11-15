@@ -163,35 +163,19 @@
         }
 
 
-        <!-- Animate how it works -->
-        @keyframes fadeIn {
-            from {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
+
+        .hidden-step {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
           }
-          .animate-fadeIn {
-            animation: fadeIn 0.8s ease-in-out forwards;
+          .visible-step {
+            opacity: 1;
+            transform: translateY(0);
           }
-          .delay-100 {
-            animation-delay: 0.1s;
-          }
-          .delay-200 {
-            animation-delay: 0.2s;
-          }
-          .delay-300 {
-            animation-delay: 0.3s;
-          }
-          .delay-400 {
-            animation-delay: 0.4s;
-          }
-          .delay-500 {
-            animation-delay: 0.5s;
-          }
+
+
+        
 
 
     </style>
@@ -577,59 +561,60 @@
 
 <!-- how it works -->
     <section class="bg-gray-50 text-gray-800">
-            <div class="container mx-auto py-10 px-4">
-              <h1 class="text-3xl font-bold text-center mb-8">How It Works</h1>
-              <div class="space-y-8">
-                <!-- Step 1 -->
-                <div class="flex items-center space-x-4 animate-fadeIn">
-                  <div class="text-lg font-semibold text-blue-500">Step 1:</div>
-                  <div>
-                    <h2 class="font-bold text-xl">Sign Up and Set Up Your Profile</h2>
-                    <p>Getting started is easy! Simply sign up, create your profile, and start using the platform right away.</p>
-                  </div>
+            
+        <div class="container mx-auto py-10 px-4">
+            <h1 class="text-3xl font-bold text-center mb-8">How It Works</h1>
+            <div class="space-y-8">
+              <!-- Step 1 -->
+              <div class="hidden-step step flex items-center space-x-4">
+                <div class="text-lg font-semibold text-blue-500">Step 1:</div>
+                <div>
+                  <h2 class="font-bold text-xl">Sign Up and Set Up Your Profile</h2>
+                  <p>Getting started is easy! Simply sign up, create your profile, and start using the platform right away.</p>
                 </div>
-                <!-- Step 2 -->
-                <div class="flex items-center space-x-4 animate-fadeIn delay-100">
-                  <div class="text-lg font-semibold text-blue-500">Step 2:</div>
-                  <div>
-                    <h2 class="font-bold text-xl">Record and Track Your Finances</h2>
-                    <p>Keep your business finances organized by entering income, expenses, and other transactions. wazacom automatically updates your records, so you always have an accurate financial picture.</p>
-                  </div>
+              </div>
+              <!-- Step 2 -->
+              <div class="hidden-step step flex items-center space-x-4">
+                <div class="text-lg font-semibold text-blue-500">Step 2:</div>
+                <div>
+                  <h2 class="font-bold text-xl">Record and Track Your Finances</h2>
+                  <p>Keep your business finances organized by entering income, expenses, and other transactions. wazacom automatically updates your records, so you always have an accurate financial picture.</p>
                 </div>
-                <!-- Step 3 -->
-                <div class="flex items-center space-x-4 animate-fadeIn delay-200">
-                  <div class="text-lg font-semibold text-blue-500">Step 3:</div>
-                  <div>
-                    <h2 class="font-bold text-xl">Get Reminders and Notifications</h2>
-                    <p>Receive important reminders and updates for tax filings, compliance deadlines, and other key activities.</p>
-                  </div>
+              </div>
+              <!-- Step 3 -->
+              <div class="hidden-step step flex items-center space-x-4">
+                <div class="text-lg font-semibold text-blue-500">Step 3:</div>
+                <div>
+                  <h2 class="font-bold text-xl">Get Reminders and Notifications</h2>
+                  <p>Receive important reminders and updates for tax filings, compliance deadlines, and other key activities.</p>
                 </div>
-                <!-- Step 4 -->
-                <div class="flex items-center space-x-4 animate-fadeIn delay-300">
-                  <div class="text-lg font-semibold text-blue-500">Step 4:</div>
-                  <div>
-                    <h2 class="font-bold text-xl">Connect, Chat, and Grow</h2>
-                    <p>Join a community of like-minded business owners, share your journey, and get insights through peer chatting.</p>
-                  </div>
+              </div>
+              <!-- Step 4 -->
+              <div class="hidden-step step flex items-center space-x-4">
+                <div class="text-lg font-semibold text-blue-500">Step 4:</div>
+                <div>
+                  <h2 class="font-bold text-xl">Connect, Chat, and Grow</h2>
+                  <p>Join a community of like-minded business owners, share your journey, and get insights through peer chatting.</p>
                 </div>
-                <!-- Step 5 -->
-                <div class="flex items-center space-x-4 animate-fadeIn delay-400">
-                  <div class="text-lg font-semibold text-blue-500">Step 5:</div>
-                  <div>
-                    <h2 class="font-bold text-xl">Gain Insights with Business Analytics</h2>
-                    <p>Leverage our analytics tools to understand your business performance, receive forecasts, and get tailored advice for growth.</p>
-                  </div>
+              </div>
+              <!-- Step 5 -->
+              <div class="hidden-step step flex items-center space-x-4">
+                <div class="text-lg font-semibold text-blue-500">Step 5:</div>
+                <div>
+                  <h2 class="font-bold text-xl">Gain Insights with Business Analytics</h2>
+                  <p>Leverage our analytics tools to understand your business performance, receive forecasts, and get tailored advice for growth.</p>
                 </div>
-                <!-- Step 6 -->
-                <div class="flex items-center space-x-4 animate-fadeIn delay-500">
-                  <div class="text-lg font-semibold text-blue-500">Step 6:</div>
-                  <div>
-                    <h2 class="font-bold text-xl">Consult with Experts</h2>
-                    <p>When you need professional guidance, reach out to our experts for personalized financial consulting.</p>
-                  </div>
+              </div>
+              <!-- Step 6 -->
+              <div class="hidden-step step flex items-center space-x-4">
+                <div class="text-lg font-semibold text-blue-500">Step 6:</div>
+                <div>
+                  <h2 class="font-bold text-xl">Consult with Experts</h2>
+                  <p>When you need professional guidance, reach out to our experts for personalized financial consulting.</p>
                 </div>
               </div>
             </div>
+          </div>
           
             <!-- Tailwind CSS Animations -->
             
@@ -741,7 +726,21 @@
                 }
             }
 
-         
+
+
+            const steps = document.querySelectorAll('.step');
+
+            const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add('visible-step');
+                entry.target.classList.remove('hidden-step');
+                }
+            });
+            }, { threshold: 0.2 });
+
+            steps.forEach(step => observer.observe(step));
+                
             
     </script>
     
