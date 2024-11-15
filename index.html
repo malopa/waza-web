@@ -161,15 +161,15 @@
         
     </style>
 </head>
-<body>
-    <header id="home" class="h-[70vh] ">
-    <div  class="header flex justify-around p-4 transparent text-center items-center text-white text-bold">
+<body class="bg-white">
+    <header id="home" class="h-[70vh] bg-white">
+    <div  class="relative header flex justify-around p-4 transparent text-center items-center text-white text-bold">
         <div>
             <img src="./images/waza.jpeg" class="rounded-md h-[40px]" />
         </div>
 
         <div>
-            <a class="mx-4 cursor-pointer text-white font-bold"><span style='color:#05a2dd'>wazacom</span><span style="color:#000;">tv</span></a>
+            <a class="hidden md:block lg:block mx-4 cursor-pointer text-white font-bold"><span style='color:#05a2dd'>wazacom</span><span style="color:#000;">tv</span></a>
         </div>
         <div>
             <ul class="hidden md:flex lg:flex items-center list-none ">
@@ -178,12 +178,25 @@
             </ul>
         </div>
 
-        <div class=""></div>
+        <div class="md:hidden lg:hidden">
+            <i class="fa fa-bars text-green-400 text-2xl cursor-pointer mr-2" aria-hidden="true"></i>
+        </div>
+
+        <div class="absolute bg-red-400 md:hidden lg:hidden  top-50 right-0">
+            <ul class="hidden md:flex lg:flex items-center list-none ">
+                <li ><a href="#about" class="mx-4 cursor-pointer text-black font-bold">Log In</a></li>
+                <li ><a class="mx-4 cursor-pointer font-bold rounded-md bg-green-500 p-2 text-white">Sign Up</a></li>
+                <li>
+                    <a class=" mx-4 cursor-pointer text-white font-bold"><span style='color:#05a2dd'>wazacom</span><span style="color:#000;">tv</span></a>
+                </li>
+            </ul>
+        </div>
+
     </div>
 
 
     
-    <div class="px-4 md:px-12 lg:px-12 py-10 flex justify-around w-full">
+    <div class="px-4 md:px-12 lg:px-12 pt-10 flex justify-around w-full">
         <div class="w-full md:w-3/4 lg:w-3/4 py-4 mt-16">
             <div class="mb-4 h-[10vh] w-full">
                 <h1 class="text-2xl w-full md:text-6xl md:text-8xl text-black font-bold typing-container" id="typing" >Workspace Finances   Platform</h1>
@@ -195,12 +208,14 @@
                 Get the app
             </button>
         </div>
-        <div class="hidden md:flex lg:flex md:w-[1px] lg:1-[1px] "></div>
+        <div class="hidden md:flex lg:flex md:w-[1px] lg:1-[1px] ">
+            
+        </div>
     </div>
 </header>
 
 
-    <section class="flex flex-col md:flex-row lg:flex-row m-auto w-full md:w-[70%] lg:w-[70%] md:h-[50vh] lg:h-[50vh] justify-between flex-start text-center mt-8 ">
+    <section class="flex flex-col md:flex-row lg:flex-row m-auto w-full md:w-[70%] lg:w-[70%] md:h-[50vh] lg:h-[50vh] justify-between flex-start text-center mt-0 ">
         <div class="w-full flex items-center justify-center md:w-1/2 lg:w-1/2">
             <svg width="650" height="330" viewBox="0 0 650 330" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path d="M460 1L258 6V48H294V90L307 48L460 42V1Z" stroke="black"/>
