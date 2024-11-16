@@ -28,6 +28,31 @@ def index():
     # qa_list = QuestionAnswer.query.all()
     return render_template('home.html')
 
+@app.route('/chat', methods=['POST'])
+def chat():
+    """Receive a question, find the answer, or respond with 'Answer not found'."""
+    data = request.json  # Get JSON payload
+    question = data.get('question')  # Extract the question from the payload
+
+    # Validate input
+    if not question:
+        return jsonify({"error": "Question is required"}), 400
+
+    # Search for an answer in the database
+    answer_entry = QuestionAnswer.query.filter(
+        QuestionAnswer.question.ilike(f"%{question}%")
+    ).first()
+
+    # Respond with the answer if found, otherwise indicate 'Answer not found'
+    if answer_entry:
+        return jsonify({
+            "question": answer_entry.question,
+            "answer": answer_entry.answer
+        })
+    else:
+        return jsonify({"answer": "I didn't find an aswer for your question please contact system admin","status":'custom'}), 404
+
+
 
 @app.route('/questions', methods=['GET'])
 def get_questions():
@@ -84,6 +109,12 @@ def search_question():
         QuestionAnswer.question.ilike(f"%{query}%")
     ).all()
     return jsonify([qa.to_dict() for qa in results])
+
+
+
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
