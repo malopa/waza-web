@@ -207,7 +207,8 @@
             <div>
                 <ul class="hidden md:flex lg:flex items-center list-none">
                     <li><a href="#about" class="mx-4 cursor-pointer text-black font-bold">Log In</a></li>
-                    <li><a class="mx-4 cursor-pointer font-bold rounded-md bg-green-500 p-2 text-white">Sign Up</a></li>
+                    <li><a class="mx-4 cursor-pointer font-bold rounded-full bg-[#05a2dd] p-2 
+                         px-4 text-white">Sign Up</a></li>
                 </ul>
             </div>
         
@@ -382,7 +383,6 @@
                             <tr>
                                 <td colspan="6" class="p-2"></td>
                             </tr>
-
 
                             <tr>
                                 <td></td>
@@ -826,7 +826,7 @@
                 // Detect scroll down
                 if (scrollTop > lastScrollTop) {
                     header.classList.add("scrolled");
-                    headerLinks.forEach(link => link.style.color = "#000"); // Change to black when scrolling down
+                    headerLinks.forEach(link => link.style.color = "#fff"); // Change to black when scrolling down
                 } 
                 // Detect scroll up
                 else {
