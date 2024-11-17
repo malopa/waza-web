@@ -195,6 +195,17 @@
             font-weight: bold;
         }
 
+        .svg{
+            width:616; 
+            height:288;
+        }
+
+        @media screen and (max-width:768px){
+            .svg{
+                width:512; 
+                height:288;
+            }   
+        }
 
         /* chat */
         svg#freepik_stories-chat:not(.animated) .animable {opacity: 0;}svg#freepik_stories-chat.animated #freepik--background-complete--inject-20 {animation: 1.5s Infinite  linear floating;animation-delay: 0s;}svg#freepik_stories-chat.animated #freepik--Emojis--inject-20 {animation: 1.5s Infinite  linear shake;animation-delay: 0s;}svg#freepik_stories-chat.animated #freepik--character-2--inject-20 {animation: 1.5s Infinite  linear wind;animation-delay: 0s;}            @keyframes floating {                0% {                    opacity: 1;                    transform: translateY(0px);                }                50% {                    transform: translateY(-10px);                }                100% {                    opacity: 1;                    transform: translateY(0px);                }            }                    @keyframes shake {                10%, 90% {                    transform: translate3d(-1px, 0, 0);                  }                  20%, 80% {                    transform: translate3d(2px, 0, 0);                  }                  30%, 50%, 70% {                    transform: translate3d(-4px, 0, 0);                  }                  40%, 60% {                    transform: translate3d(4px, 0, 0);                  }            }                    @keyframes wind {                0% {                    transform: rotate( 0deg );                }                25% {                    transform: rotate( 1deg );                }                75% {                    transform: rotate( -1deg );                }            }  
@@ -305,12 +316,12 @@
     <section class="flex flex-col-reverse  md:flex-row lg:flex-row m-auto w-full md:w-[80%] lg:w-[70%]  lg:minh-[50vh] justify-between flex-start text-center mt-8 ">
 
         <div class="w-full flex flex-col items-center justify-between mt-4 lg:mt-0 md:w-1/2 lg:w-1/2">
-            <div class="not" >
+            <div class="not py-4" >
                 The platform provides reminders based on the registration information. Please provide accurate information when registering your business to ensure you receive timely reminders
             </div>
             <h1 class="text-lg  my-2 ">There are three features for which you can set reminders</h1>
 
-            <svg width="668" height="288" viewBox="0 0 668 288" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="svg" viewBox="0 0 668 288" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.957 273.158C28.6057 268.464 35.4227 263 35.4227 263H43.294C43.294 263 49.4017 268.646 48.9164 273.158C48.0796 280.936 29.5408 280.959 28.957 273.158Z" fill="#FBCF14" stroke="black" stroke-width="2"/>
                 <path d="M84.957 273.158C84.6057 268.464 91.4227 263 91.4227 263H99.294C99.294 263 105.402 268.646 104.916 273.158C104.08 280.936 85.5408 280.959 84.957 273.158Z" fill="#FBCF14" stroke="black" stroke-width="2"/>
                 <circle cx="59.9438" cy="38" r="26" fill="#FBCF14" stroke="black" stroke-width="2"/>
